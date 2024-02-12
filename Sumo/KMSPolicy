@@ -1,0 +1,9 @@
+        {
+            "Sid": "Enable Sumo Logic S3 kms decrypt",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::<accountnumber>:role/<sumoaccountrolename>"
+            },
+            "Action": "kms:decrypt",
+            "Resource": "*"
+        }
