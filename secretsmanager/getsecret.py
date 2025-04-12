@@ -1,13 +1,14 @@
 import json
 import boto3
-import base64
+
 from botocore.exceptions import ClientError
 
 
-def lambda_handler(event, context):
+
+def get_secret():
     secret_name = "test_key"
     region_name = "us-east-1"
-    session = boto3.session.Session()
+    session = boto3.Session()
     client = session.client(
         service_name='secretsmanager',
         region_name=region_name
