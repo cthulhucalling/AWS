@@ -1,0 +1,6 @@
+[profile <profile name>]
+sso_start_url = https://<alias>.awsapps.com/start/
+sso_region = us-east-1
+sso_account_id = <account id>
+sso_role_name = <role name>
+region = us-west-2
